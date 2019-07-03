@@ -4,21 +4,17 @@ CatapultPay is a NEMPay fork for Nem2 Catapult private network
 
 This proyect is under construction
 
-## Task
+## Task's
 
-1. Private Key Generation
-2. Show Balance
-3. Show transactions
-4. QR transaction
-5. Account module
-
-### Autor
-
-- Pablo Romero (PR)
-
+1. Private Key Generation (PR)
+2. Show Balance (YM)
+3. Show transactions (YM)
+4. QR transaction (PR)
+5. Account module (PR)
 
 ## Collaborators
 
+- Pablo Romero (PR)
 - Yenire Milano (YM)
 - Raquel Garcia (RG)
 
