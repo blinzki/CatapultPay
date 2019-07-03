@@ -22,13 +22,13 @@ This proyect is under construction
 ## Working on
 
 8.  signup_simplewallet [PR]
-9.  trans               [PR]
+9.  trans [PR]
 
 ## Collaborators
 
-- Pablo Romero (PR)
-- Yenire Milano (YM)
-- Raquel Garcia (RG)
+- Pablo Romero [PR]
+- Yenire Milano [YM]
+- Raquel Garcia [RG]
 
 
 
