@@ -215,7 +215,7 @@ export class TransferPage {
             // let a = alert("Cuenta: "  + recipientAddress + "\n" +
             //           "Monto: "   + amount +  "\n" +
             //           "Mensaje: " + msg);
-            this.navCtrl.push(BalancePage, {});
+            //this.navCtrl.push(BalancePage, {});
             loader.dismiss();
             this.toast.showTransactionConfirmed();
             this.navCtrl.push(BalancePage, {});
