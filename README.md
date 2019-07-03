@@ -4,13 +4,25 @@ CatapultPay is a NEMPay fork for Nem2 Catapult private network
 
 This proyect is under construction
 
-## Tasks
+## Todo
 
-1. Private Key Generation (PR)
-2. Show Balance (YM)
-3. Show transactions (YM)
-4. QR transaction (PR)
-5. Account module (PR)
+1.  Account
+2.  balance
+3.  contact
+4.  login
+5.  receive
+6.  signup
+7.  signup_privatekey
+8.  signup_simplewallet
+9.  trans 	
+10. transactions_confirmedactions
+11. transactions_unconfirmed
+12. transfer
+
+## Working on
+
+8.  signup_simplewallet
+9.  trans
 
 ## Collaborators
 
