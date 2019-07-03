@@ -32,6 +32,9 @@ import {LoginPage} from '../login/login';
 import {Password, SimpleWallet} from "nem-library";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {PasswordValidation} from "../../validators/password.validator";
+declare var require: any;
+const nem2Sdk = require("nem2-sdk");
+
 
 @Component({
     selector: 'page-signup-simple-wallet',

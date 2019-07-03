@@ -34,7 +34,7 @@ import {WalletProvider} from '../../providers/wallet/wallet.provider';
 import {BalancePage} from '../balance/balance';
 import {LoginPage} from '../login/login';
 import { SimpleWallet} from 'nem-library';
-declare var require: any
+declare var require: any;
 const nem2Sdk = require("nem2-sdk");
 const request = require('request')
 
