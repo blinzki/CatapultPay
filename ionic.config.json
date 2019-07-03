@@ -1,0 +1,7 @@
+{
+  "name": "nempay",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

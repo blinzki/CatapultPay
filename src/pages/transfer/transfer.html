@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-navbar color="light">
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            {{'TRANSFER' | translate}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding id="transfer">
+    <div class="default-padding">
+        <ion-row>
+            <ion-col>
+        <span  on-click="scanQR()" class="scan-button-wrapper">
+            <ion-icon name="qr-scanner"></ion-icon> {{'SCAN_QR' | translate}}
+        </span>
+            </ion-col>
+        </ion-row>
+        <form [formGroup]="transferTransactionForm" (ngSubmit)="prepareTransaction()">
+            <ion-item id="transfer-input1">
+                <ion-label stacked>
+                    {{'RECIPIENT_ADDRESS' | translate}}
+                </ion-label>
+                <ion-input type="text" name="rawRecipient" placeholder=""  formControlName="rawRecipient"
+                           [class.invalid]="!transferTransactionForm.controls.rawRecipient.valid &&
+                        (transferTransactionForm.controls.rawRecipient.dirty)">
+                </ion-input>
+            </ion-item>
+            <ion-item  *ngIf="!transferTransactionForm.controls.rawRecipient.valid &&
+                        (transferTransactionForm.controls.rawRecipient.dirty)">
+                <span>{{'ALERT_WALLET_IS_NOT_VALID_FOR_THIS_NETWORK' | translate}}</span>
+            </ion-item>
+            <ion-item>
+                <ion-label>
+                    {{'AMOUNT' | translate}}
+                </ion-label>s
+                <ion-input type="number" min="0" name="amount" formControlName="amount"
+                           [class.invalid]="!transferTransactionForm.controls.amount.valid &&
+                        (transferTransactionForm.controls.amount.dirty)">
+                </ion-input>
+            </ion-item>
+            <ion-item  *ngIf="!transferTransactionForm.controls.amount.valid &&
+                        (transferTransactionForm.controls.amount.dirty)">
+                <span>{{'INVALID_AMOUNT' | translate}}</span>
+            </ion-item>
+            <ion-item>
+
+            </ion-item>
+
+            <ion-item>
+                <ion-label stacked>
+                    {{'MESSAGE' | translate}}
+                </ion-label>
+                <ion-textarea rows="8" name="message" formControlName="message"></ion-textarea>
+            </ion-item>
+            <div class="spacer xs"></div>
+
+            <button ion-button color="positive" block  [disabled]="!transferTransactionForm.valid">
+                {{'CONTINUE' | translate}}
+            </button>
+        </form>
+    </div>
+</ion-content>
