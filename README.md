@@ -8,13 +8,13 @@ This proyect is under construction
 
 1. Private Key Generation
 2. Show Balance
-3. show transactions
-4. QR Transaction
+3. Show transactions
+4. QR transaction
 5. Account module
 
 ### Autor
 
-***Pablo Romero** 
+- Pablo Romero (PR)
 
 
 ## Collaborators
