@@ -146,7 +146,7 @@ export class TransferPage {
         let subtitle = translate['YOU_ARE_GOING_TO_SEND'] + ' <br/><br/> ';
         const formValue = this.transferTransactionForm.value;
         recipientAddress = formValue.rawRecipient;
-        amount = formValue.amount;
+        amount = formValue.amount * 1000000;
         msg = formValue.message;
         subtitle +=  "<b>" + translate['AMOUNT'] + ":</b> ";
         subtitle += formValue.amount + " xem";
@@ -208,19 +208,20 @@ export class TransferPage {
             content: this.translate['PLEASE_WAIT']
         });
         loader.present().then(_ => {
-            const tx = createTX(recipientAddress, mosaicCode, msg, networkType, amount);
-            const stx = singTX(tx, generationHash, privateKey, networkType);
-            const rtx = announceTX (stx)
-
+            if (recipientAddress.length == 40){
+                const tx = createTX(recipientAddress, mosaicCode, msg, networkType, amount);
+                const stx = singTX(tx, generationHash, privateKey, networkType);
+                const rtx = announceTX (stx)
+                this.toast.showTransactionConfirmed();
+                this.navCtrl.push(BalancePage, {});
+            } else {
+                this.alert.showError("Wrong Address");
+            }
             // let a = alert("Cuenta: "  + recipientAddress + "\n" +
-            //           "Monto: "   + amount +  "\n" +
+            //            "Monto: "   + amount +  "\n" +
             //           "Mensaje: " + msg);
-            //this.navCtrl.push(BalancePage, {});
             loader.dismiss();
-            this.toast.showTransactionConfirmed();
-            this.navCtrl.push(BalancePage, {});
-
-            //this.throwError(err);
+            //this.throwError("error");
             //loader.dismiss();
         });
     }
