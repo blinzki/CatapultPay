@@ -21,8 +21,8 @@ This proyect is under construction
 
 ## Working on
 
-8.  signup_simplewallet
-9.  trans
+8.  signup_simplewallet [PR]
+9.  trans               [PR]
 
 ## Collaborators
 
