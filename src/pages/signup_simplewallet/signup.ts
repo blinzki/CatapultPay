@@ -35,11 +35,11 @@ import {PasswordValidation} from "../../validators/password.validator";
 declare var require: any;
 const nem2Sdk = require("nem2-sdk");
 
-
 @Component({
     selector: 'page-signup-simple-wallet',
     templateUrl: 'signup.html'
 })
+
 export class SignupSimpleWalletPage {
     private signupForm: FormGroup;
 
