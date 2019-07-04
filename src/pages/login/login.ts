@@ -31,6 +31,7 @@ import {BalancePage} from '../balance/balance';
 import {SignupPage} from '../signup/signup';
 import {SimpleWallet} from 'nem-library';
 
+
 @Component({
     selector: 'page-login',
     templateUrl: 'login.html'
