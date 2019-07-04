@@ -4,6 +4,13 @@ CatapultPay is a NEMPay fork for Nem2 Catapult private network
 
 This proyect is under construction
 
+## Install
+as root user...
+```
+git clone https://github.com/blinzki/CatapultPay.git
+cd CatapultPay/
+ionic serve
+```
 ## Todo
 
 1.  Account
