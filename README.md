@@ -28,9 +28,10 @@ ionic serve
 12. transfer
 
 ## Working on
-
+2.  balance [YM]
 8.  signup_simplewallet [PR]
 9.  trans [PR]
+12. transfer [YM]
 
 ## Collaborators
 
