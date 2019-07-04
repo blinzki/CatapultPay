@@ -9,6 +9,7 @@ This proyect is under construction
 ```
 git clone https://github.com/blinzki/CatapultPay.git
 cd CatapultPay/
+sh install.sh
 ionic serve
 ```
 ## Todo
